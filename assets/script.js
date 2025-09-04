@@ -140,7 +140,6 @@ function showAlert(message, duration = 3000) {
   // Styling via JS
   alertBox.style.position = "fixed";
   alertBox.style.top = "20px";
-  alertBox.style.right = "500px";
   alertBox.style.background = "#600000ff";
   alertBox.style.color = "#fff";
   alertBox.style.padding = "3px 10px";
