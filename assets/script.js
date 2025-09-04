@@ -13,15 +13,6 @@ Shery.makeMagnet("#portfolio", {
   duration: 0.6,
 });
 
-// Shery.makeMagnet(".section-title", {
-//   //Parameters are optional.
-//   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-//   duration: 0.3,
-// });
-
-
-
-// loder
 
 
 
@@ -130,15 +121,7 @@ gsap.to(".user", {
   ease: "elastic.out(1, 0.5)"  // bouncy effect
 });
 
-var figure = $("#scroll1").hover(hoverVideo,hideVideo);
 
-function hoverVideo(e){
-  $("video".this).get(0).play();
-}
-
-function hideVideo(e){
-  $("video".this).get(0).pause();
-}
 
 var typed2 = new Typed('#autoplay', {
   strings: ['<strong style="color:#32ae49;  font-family: Gilroy; font-weight: 500; "> <i style=" font-family: art;">Software</i> developer.</strong> ', ' <strong style="color:#e60000;  font-family: Gilroy; font-weight: 400; "   >Full-<i style=" font-family: art;">Stack</i>-developer !</strong >', '<strong style="color:#FF9800;"><i style=" font-family: art; " >UX/UI</i>-Developer !</strong>'],
@@ -148,3 +131,8 @@ var typed2 = new Typed('#autoplay', {
   startDelay: 1000,
   loop: true
 });
+  window.onload = function () {
+      setTimeout(() => {
+        document.getElementById("autoAlert").classList.add("hide");
+      }, 1000); // 3 seconds
+    };

@@ -2,6 +2,7 @@
   font-family:art;
   src: url(./tra.0ac25662.ttf);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -265,16 +266,7 @@
   }
 
 
-  /* card css extra added */
-/* 
-  .overlaycard{
-    position: relative;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    background-image: linear-gradient(to top right,rgba(2, 2, 2, 0.861)10%,rgba(0, 0, 0, 0.007));
-  } */
+
 
   .block-reveal__text{
     font-family: art;
@@ -349,7 +341,9 @@
   opacity: 1;
 
 }
-
+.project-image>video::-webkit-media-controls {
+  display: none !important;
+}
 #web a{
   text-decoration: none;
   color: white;
@@ -365,15 +359,35 @@
   color: #6321e6;
   font-size: 35px;
   text-shadow: 1px 1px 1px #4bd84f;
-  /* text-shadow: 1px 1px 1px #A020F0; */
   
   
 }
-/* #A020F0
- */
+
+ 
+.alert {
+      padding: 15px;
+      background-color: #0E0C16; /* green */
+      color: white;
+      border-radius: 5px;
+      margin: 10px;
+      opacity: 1;
+      transition: opacity 1s ease; /* smooth fade */
+      z-index: 99999;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 300;
+    }
+
+    /* Hidden state */
+    .alert.hide {
+      opacity: 0;
+      visibility: hidden;
+    }
 .user{
   position: absolute;
-  top: 0px;
+  top: -10px;
   left: 70%;
   width: 320px;
   height: 420px;
@@ -529,13 +543,14 @@ top: 30%;
 }
 
 /* =========================
-   Mobile Responsive (≤320px)
+   Mobile Responsive (≤450px)
    ========================= */
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   /* Skills section full width */
+
   #skil {
     flex-direction: column;
-    gap: 20px;
+    gap: 35px;
     padding: 15px;
   }
 
@@ -548,8 +563,8 @@ top: 30%;
     height: 230px;
   }
   .card .main .top{
-    top: -6px;
-    left: -5px;
+    top: -1px;
+    left: 14px;
   }
   .card .main .title {
     font-size: 18px;
@@ -600,7 +615,7 @@ top: 30%;
     font-size: calc(100% - 40%);
   }
   .start1{
-  min-height: 100vh;
+  min-height: 400px;
   }
   #foter1{
 position: relative;
@@ -615,3 +630,17 @@ top: 30%;
   font-size: 1rem;
  }
 }
+
+@media (max-width: 394px) {
+ .card .main .top{
+    top: -4px;
+    left: 0px;
+  }
+}
+@media (max-width: 376px) {
+ .card .main .top{
+    top: -10px;
+    left: -5px;
+  }
+}
+
