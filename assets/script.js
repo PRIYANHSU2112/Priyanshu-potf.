@@ -131,8 +131,31 @@ var typed2 = new Typed('#autoplay', {
   startDelay: 1000,
   loop: true
 });
-  window.onload = function () {
-      setTimeout(() => {
-        document.getElementById("autoAlert").classList.add("hide");
-      }, 1000); // 3 seconds
-    };
+
+
+function showAlert(message, duration = 3000) {
+  let alertBox = document.createElement("div");
+  alertBox.innerText = message;
+
+  // Styling via JS
+  alertBox.style.position = "fixed";
+  alertBox.style.top = "20px";
+  alertBox.style.right = "500px";
+  alertBox.style.background = "#600000ff";
+  alertBox.style.color = "#fff";
+  alertBox.style.padding = "3px 10px";
+  alertBox.style.borderRadius = "2px";
+  alertBox.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
+  alertBox.style.zIndex = "9999";
+    alertBox.style.fontSize = "1.1rem";
+
+  document.body.appendChild(alertBox);
+
+  // Auto remove after duration
+  setTimeout(() => {
+    alertBox.remove();
+  }, duration);
+}
+
+// Example call
+showAlert("Watch in deWatch on desktop for a better experience./Chrome", 2000);

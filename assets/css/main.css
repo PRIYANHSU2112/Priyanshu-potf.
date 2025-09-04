@@ -363,28 +363,6 @@
   
 }
 
- 
-.alert {
-      padding: 15px;
-      background-color: #0E0C16; /* green */
-      color: white;
-      border-radius: 5px;
-      margin: 10px;
-      opacity: 1;
-      transition: opacity 1s ease; /* smooth fade */
-      z-index: 99999;
-      font-size: 1.2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: 300;
-    }
-
-    /* Hidden state */
-    .alert.hide {
-      opacity: 0;
-      visibility: hidden;
-    }
 .user{
   position: absolute;
   top: -10px;
