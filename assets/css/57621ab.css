@@ -1229,7 +1229,7 @@ h3:after {
     left: 1px;
     height: 6px;
     width: 6px;
-    pointer-events: none;
+    pointer-events:none;
     mix-blend-mode:difference!important;
 
     
