@@ -146,7 +146,7 @@ function showAlert(message, duration = 3000) {
   alertBox.style.borderRadius = "2px";
   alertBox.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
   alertBox.style.zIndex = "9999";
-    alertBox.style.fontSize = "1.1rem";
+  alertBox.style.fontSize = "1.1rem";
 
   document.body.appendChild(alertBox);
 
@@ -157,4 +157,4 @@ function showAlert(message, duration = 3000) {
 }
 
 // Example call
-showAlert("Watch in deWatch on desktop for a better experience./Chrome", 2000);
+showAlert("Watch on desktop for a better experience./Chrome", 2000);
